@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% do assets.addCss('theme://css/website.css', 100) %}
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ assets.css()|raw }}
+        <title>{{site.title|e}}</title>
+    </head>
+    <body>
+        <div class="iconholder homebutton">
+            <span class="icon">home</span>
+        </div>
+        <div class="center">
+            <div class="content">
+                {% set foo = page.content|raw %}
+                {% set sp = foo|split(page.header.page_list_placeholder) %}
+                {{sp[0]|raw}}
+                {% include 'partials/navigation2.html.twig' %}
+                {{sp[1]|raw}}
+            </div>
+        </div>
+        <div class=wrbox>
+            <a class="iconbutton wrbutton wrleft" href="{{page.header.webring.left}}">
+                <span class="icon">arrow_back</span>
+            </a>
+            <span class="wrlabel">Queso Webring</span>
+            <a class="iconbutton wrbutton wrright" href="{{page.header.webring.right}}">
+                <span class="icon">arrow_forward</span>
+            </a>
+        </div>
+    </body>
+</html>

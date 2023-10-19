@@ -182,15 +182,18 @@ a:hover {
     background-color: #0000004d;
 }
 
-.reveal_content {
-/* transform: translateY(100%); */
+.glow {
 animation: reveal 1.7s forwards;
 animation-delay: .5s;
 }
 
+.h2t.glow {
+    animation-delay: 1s;
+}
+
 @keyframes reveal {
 from {
-    text-shadow: 0 0 0px #c7631700;
+    text-shadow: 0 0 0px transparent;
 }
 to {
     text-shadow: 0 0 100px;

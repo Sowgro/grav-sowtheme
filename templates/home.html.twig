@@ -18,7 +18,7 @@
 			</div>
         </div>
         <div class="center">
-            <div class="content reveal">
+            <div class="content">
                 {% set foo = page.content|raw %}
                 {% set sp = foo|split(page.header.page_list_placeholder) %}
                 {{sp[0]|raw}}

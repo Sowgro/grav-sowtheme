@@ -10,16 +10,21 @@
 		<title>{{ header.title|e }}</title>
 	</head>
 	<body>
-		<a href="https://sowgro.net" class="iconbutton homebutton">
-			<span class="icon">home</span>
-		</a>
+		<div class="header">
+			<div class=wrbox>
+				<a class="iconbutton wrbutton wrleft" href="/">
+					<span class="icon" title="/">home</span>
+				</a>
+				<span class="wrlabel">Tyler Ferrari's Site</span>
+			</div>
+		</div>
 		<div class="center">
 			<div class="content">
 				{{ page.content|raw }}
 			</div>
 		</div>
 		<div class=datebox>
-			<span class="date">{{ header.date|e }}</span>
+			<span class="date" title="Last Edited">{{ header.date|e }}</span>
 		</div>
 	</body>
 </html>

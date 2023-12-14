@@ -1,3 +1,67 @@
+/* text styleing */
+img {
+    max-width: 100%;
+}
+
+blockquote {
+	background-color: rgba(255,255,255,0.10);
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+code {
+	display: inline-block;
+    background: rgba(0,0,0,0.20);
+    padding: 5px;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+h1 {
+	line-height: normal;
+	font-size: 300%;
+	color: #de6b15;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+a {
+    color: rgba(81,185,255);
+	text-decoration: none;
+}
+
+a:hover {
+    color: rgba(81,185,255,0.50);
+	text-decoration: none;
+}
+
+li {
+    padding: 2px 0px;
+}
+
+/* icon */
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v120/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDJ_vb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2) format('woff2');
+}
+
+.icon {
+    font-family: 'Material Symbols Rounded';
+    user-select: none;
+}
+
+/* Structure */
 html {
     color: rgba(220,220,220);
     background-color: #141516;
@@ -20,198 +84,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
+    margin-top: 20px;
 } 
 
 .content {
     width: 900px;
     max-width: 95vw;
-}
-
-img {
-    max-width: 100%;
-}
-
-blockquote {
-	background-color: rgba(255,255,255,0.10);
-    border-left: 10px solid #eee;
-    margin: 0;
-    padding: 0 2rem;
-}
-
-code {
-	display: inline-block;
-    background: rgba(0,0,0,0.20);
-    padding: 5px;
-}
-
-/* for large code blocks */
-pre {
-    overflow-x: auto;
-}
-
-h1 {
-	line-height: normal;
-	font-size: 300%;
-	color: #de6b15;
-    /* text-shadow: 0 0 70px #c76317; */
-}
-
-.h1t {
-    margin-top: 20px;
-    font-size: 500%;
-    margin-bottom: 0px;
-    /* text-align: center; */
-}
-
-h2 {
-	font-size: 200%;
-    /* text-shadow: 0 0 50px #8d8d8d; */
-}
-
-h3 {
-	font-size: 125%;
-}
-
-a {
-    color: rgba(81,185,255);
-	text-decoration: none;
-}
-
-a:hover {
-    color: rgba(81,185,255,0.50);
-	text-decoration: none;
-}
-
-.date {
-	margin: 10px;
-    text-align: center;
-}
-
-.datebox
-{
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
-}
-
-/* icon/button stuff */
-@font-face {
-    font-family: 'Material Symbols Rounded';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v120/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDJ_vb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2) format('woff2');
-}
-
-.icon {
-    font-family: 'Material Symbols Rounded';
-}
-
-.iconbutton {
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    border-width: 0px;
-    background-color: #272a2c;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    user-select: none;
-}
-
-.iconholder {
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    border-width: 0px;
-    /* background-color: #272a2c; */
-    color: rgb(133, 133, 133);
-    font-size: 20px;
-    text-align: center;
-    user-select: none;
-}
-
-.iconbutton:hover {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #272a2c85;
-}
-
-.wrlabel
-{
-    display: flex;
-    margin: 5px 0px;
-    border-width: 0px;
-    background-color: transparent;
-    height: 40px;
-    font-size: 20px;
-    padding: 0px 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.wrbox
-{
-    background-color: rgba(0, 0, 0, 0.411);
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    border-radius: 500px;
-}
-
-.wrbutton
-{
-    z-index: 1;
-    margin: 5px;
-    background-color: transparent;
-    border-radius: 100%;
-}
-
-.wrbutton:hover {
-    background-color: #0000004d;
-}
-
-.glow {
-animation: reveal 1.7s forwards;
-animation-delay: .5s;
-}
-
-.h2t.glow {
-    animation-delay: 1s;
-}
-
-@keyframes reveal {
-from {
-    text-shadow: 0 0 0px transparent;
-}
-to {
-    text-shadow: 0 0 100px;
-}
-}
-
-body {
-visibility: hidden;
-animation: reveal2 1s forwards;
-}
-
-@keyframes reveal2 {
-from {
-    opacity: 0;
-}
-to {
-    visibility: visible;
-}
+    padding-bottom: 20px;
 }
 
 .footer {
@@ -222,14 +101,44 @@ to {
 
 .header {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin: 40px;
 }
 
-.header .wrlabel {
-    margin-right: 10px;
+/* Buttons */
+.roundedButton
+{
+    text-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: row;
+    border-radius: 500px;
+    gap: 10px;
+    padding: 8px 20px;
 }
 
+.roundedButton:hover
+{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.transparentButton
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 500px;
+    gap: 10px;
+    padding: 8px 20px;
+}
+
+.links
+{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+}
+
+/* mobile */
 @media only screen 
 and (max-device-width: 900px)
 {
@@ -237,9 +146,71 @@ and (max-device-width: 900px)
 {
     margin: 10px;
 }    
+.footer
+{
+    margin: 10px;
+}
 .h1t 
 {
     font-size: 300%;
 }
 
+}
+
+/* animation */
+
+@keyframes reveal2 {
+from {
+    opacity: 0;
+}
+to {
+    visibility: inherit;
+    
+}
+}
+
+.anim1,body {
+    animation-delay: 0s;
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    }
+
+.anim2,.content {
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    animation-delay: 300ms;
+}
+
+.anim3 {
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    animation-delay: 450ms;
+}
+
+.anim4 {
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    animation-delay: 600ms;
+}
+
+.anim5 {
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    animation-delay: 750ms;
+}
+
+.anim6 {
+    visibility: hidden;
+    animation: reveal2 .5s forwards;
+    animation-delay: 900ms;
+}
+
+/* home page only */
+.h1t {
+    font-size: 500%;
+    margin: 0px;
+}
+
+.h2t {
+    margin: 15px 5px;
 }

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% do assets.addCss('theme://css/website.css', 100) %}
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,35 +10,22 @@
         <title>{{site.title|e}}</title>
     </head>
     <body>
-        <div class="header">
-			<div class=wrbox>
-				<div class="iconholder wrbutton wrleft">
-					<span class="icon">home</span>
-				</div>
-			</div>
-        </div>
+        {% include 'partials/header.html.twig' %}
         <div class="center">
             <div class="content">
-                {% set foo = page.content|raw %}
-                {% set sp = foo|split(page.header.page_list_placeholder) %}
-                {{sp[0]|raw}}
-                {% include 'partials/navigation2.html.twig' %}
-                {{sp[1]|raw}}
+                {{ page.content|raw }}
             </div>
         </div>
-        <div class=datebox>
-			<span class="date" title="Last Edited">{{ header.date|e }}</span>
-		</div>
-        {# <div class="footer">
-            <div class=wrbox>
-                <a class="iconbutton wrbutton wrleft" href="{{page.header.webring.left}}">
+        <div class=footer>
+            <div class="transparentButton">
+                <a href="{{page.header.webring.left}}">
                     <span class="icon">arrow_back</span>
                 </a>
-                <span class="wrlabel">Queso Webring</span>
-                <a class="iconbutton wrbutton wrright" href="{{page.header.webring.right}}">
+                <span>Queso Webring</span>
+                <a href="{{page.header.webring.right}}">
                     <span class="icon">arrow_forward</span>
                 </a>
             </div>
-        </div> #}
+        </div>
     </body>
 </html>

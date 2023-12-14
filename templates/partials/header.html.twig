@@ -1,0 +1,11 @@
+		<div class="header">
+            {% if page.header.icon %}
+			<span class=icon>{{page.header.icon}}</span>
+            {% else %}
+            <span class=icon>web</span>
+            {% endif %}
+            {% if page.url != "/" %}
+            <a href="/" style="color:white;">{{site.title|e}}</a>
+            {% endif %}
+            <span class="icon" style="color:transparent;">web</span>
+		</div>

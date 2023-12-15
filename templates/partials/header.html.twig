@@ -1,11 +1,17 @@
 		<div class="header">
             {% if page.header.icon %}
-			<span class=icon>{{page.header.icon}}</span>
+			    <span class=icon>{{page.header.icon}}</span>
             {% else %}
-            <span class=icon>web</span>
+                <span class=icon>web</span>
             {% endif %}
             {% if page.url != "/" %}
-            <a href="/" style="color:white;">{{site.title|e}}</a>
+                <a href="/" style="color:white;">{{site.title|e}}</a>
             {% endif %}
+            {% if page.parent.url != "/" %}
+                <a href="{{ page.parent.url }}">
+                    <span class="icon" style="color: white;">close</span>
+                </a>
+            {% else %}
             <span class="icon" style="color:transparent;">web</span>
+            {% endif %}
 		</div>

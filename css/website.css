@@ -44,6 +44,14 @@ a:hover {
 	text-decoration: none;
 }
 
+a.white {
+    color: white;
+}
+
+a.white:hover {
+    color:rgba(255, 255, 255, 0.50);
+}
+
 li {
     padding: 2px 0px;
 }
@@ -184,7 +192,6 @@ and (max-device-width: 900px)
 }
 
 /* animation */
-
 @keyframes reveal2 {
     from { opacity: 0.1; }
     to { opacity: 1; }

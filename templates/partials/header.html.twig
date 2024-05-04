@@ -10,20 +10,11 @@
         {% else %}
         <span class="icon" style="color: white;">home</span>
         {% endif %}
-        
-        {% if page.parent.url != "/" %}
-        <a class="anim4" href="/">
-            <div class="roundedButton">
-                <span class="icon">home</span>
-                <span>Home</span>
-            </div>
-        </a>
-        {% endif %}
     </div>
 
     <div id="center">
         {% if page.url != "/" %}
-        <a href="/" style="color:white;">{{site.title|e}}</a>
+        <a href="/" class="white">{{site.title|e}}</a>
         {% endif %}
     </div>
 

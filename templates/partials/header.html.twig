@@ -14,5 +14,26 @@
             {% else %}
             <span class="icon" style="color:transparent;">web</span>
             {% endif %} #}
-            {% include 'partials/navigation.html.twig' %}
+            {# {% include 'partials/navigation.html.twig' %} #}
+            <div class=links>
+                {% if page.parent.url != "/" %}
+                <a class="anim3" href="{{ page.parent.url }}">
+                    <div class="roundedButton">
+                        <span class="icon">arrow_back</span>
+                        <span>Back</span>
+                    </div>
+                </a>
+                {% endif %}
+                {% if page.url != "/" %}
+                <a class="anim4" href="/">
+                    <div class="roundedButton">
+                        <span class="icon">home</span>
+                        <span>Home</span>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            {% if page.url != "/" %}
+                <a href="/" style="color:white;">{{site.title|e}}</a>
+            {% endif %}
 		</div>

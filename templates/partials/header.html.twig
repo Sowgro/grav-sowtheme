@@ -1,5 +1,5 @@
 		<div class="header">
-            {% if page.header.icon %}
+            {# {% if page.header.icon %}
 			    <span class=icon>{{page.header.icon}}</span>
             {% else %}
                 <span class=icon>web</span>
@@ -13,5 +13,6 @@
                 </a>
             {% else %}
             <span class="icon" style="color:transparent;">web</span>
-            {% endif %}
+            {% endif %} #}
+            {% include 'partials/navigation.html.twig' %}
 		</div>

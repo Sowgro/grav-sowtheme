@@ -31,9 +31,12 @@
                         <span>Home</span>
                     </div>
                 </a>
+                {% else %}
+                <span class="icon" style="color: white;">close</span>
                 {% endif %}
             </div>
             {% if page.url != "/" %}
                 <a href="/" style="color:white;">{{site.title|e}}</a>
             {% endif %}
+            <span class="icon" style="color:transparent;">web</span>
 		</div>

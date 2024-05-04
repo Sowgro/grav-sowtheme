@@ -1,4 +1,4 @@
-/* text styleing */
+/* text styling */
 img {
     max-width: 100%;
 }
@@ -46,6 +46,23 @@ a:hover {
 
 li {
     padding: 2px 0px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+thead {
+    text-align: left;
+}
+
+td {
+    padding-right: 100px;
 }
 
 /* icon */

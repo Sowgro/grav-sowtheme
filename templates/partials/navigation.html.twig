@@ -1,9 +1,9 @@
 
 {% if page.parent.parent.url == "/" %}
-<div class="links" id="nextback">
-    {% set prevPage = page.adjacentSibling(-1) %}
+<div class="links" id="nextprev">
+    {% set prevPage = page.prevSibling() %}
     {% if prevPage %}
-    <a class="anim2" id="next" href="{{ prevPage.url }}">
+    <a class="anim2" id="prev" href="{{ prevPage.url }}">
         <div class="roundedButton">
             <span class="icon">arrow_back</span>
             <div class="stack">
@@ -14,9 +14,9 @@
     </a>
     {% endif %}
 
-    {% set nextPage = page.adjacentSibling(1) %}
+    {% set nextPage = page.nextSibling() %}
     {% if nextPage %}
-    <a class="anim3" id="back" href="{{ nextPage.url }}">
+    <a class="anim3" id="next" href="{{ nextPage.url }}">
         <div class="roundedButton">
             <span class="icon">arrow_forward</span>
             <div class="stack">

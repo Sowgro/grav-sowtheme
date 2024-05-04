@@ -178,7 +178,11 @@ body {
     flex-direction: column;
 }
 
-#nextback #next, #nextback, #back{
+#nextback {
+    padding-top: 20px;
+}
+
+#nextback #next, #nextback #back{
     max-width: 40%;
     overflow:hidden;
 }

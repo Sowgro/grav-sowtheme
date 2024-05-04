@@ -1,13 +1,5 @@
 <div class="header">
     <div id="left">
-        {% if page.parent.url != "/" %}
-        <a class="anim4" href="/">
-            <div class="roundedButton">
-                <span class="icon">home</span>
-                <span>Home</span>
-            </div>
-        </a>
-        {% endif %}
         {% if page.url != "/" %}
         <a class="anim3" href="{{ page.parent.url }}">
             <div class="roundedButton">
@@ -18,7 +10,15 @@
         {% else %}
         <span class="icon" style="color: white;">home</span>
         {% endif %}
-
+        
+        {% if page.parent.url != "/" %}
+        <a class="anim4" href="/">
+            <div class="roundedButton">
+                <span class="icon">home</span>
+                <span>Home</span>
+            </div>
+        </a>
+        {% endif %}
     </div>
 
     <div id="center">

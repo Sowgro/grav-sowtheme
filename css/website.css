@@ -178,8 +178,9 @@ body {
     flex-direction: column;
 }
 
-#nextback {
-    max-width: 100%;
+#nextback #next, #nextback, #back{
+    max-width: 40%;
+    overflow:hidden;
 }
 
 /* mobile */

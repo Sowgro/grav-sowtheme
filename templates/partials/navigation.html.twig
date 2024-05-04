@@ -1,18 +1,18 @@
-<div class=links>
+<div class="links" id="nextback">
     {# {% if $prevPage = page.prevSibling %} #}
-    <a class="anim2" href="{{ page.parent.url }}">
+    <a class="anim2" id="next" href="{{ page.parent.url }}">
         <div class="roundedButton">
             <span class="icon">arrow_back</span>
             <div class="stack">
                 <span>Previous</span>
-                <span>Sample last article name</span>
+                <span>Sample last article name that is super long and will require me to clip it</span>
             </div>
         </div>
     </a>
     {# {% endif %} #}
 
     {# {% if $nextPage = page.nextSibling %} #}
-    <a class="anim3" id="nextback" href="{{ page.parent.url }}">
+    <a class="anim3" id="back" href="{{ page.parent.url }}">
         <div class="roundedButton">
             <span class="icon">arrow_forward</span>
             <div class="stack">

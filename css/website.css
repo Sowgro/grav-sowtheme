@@ -51,6 +51,7 @@ li {
 /* Table */
 table {
     border-collapse: collapse;
+    margin-bottom: 15px;
 }
 
 tr {

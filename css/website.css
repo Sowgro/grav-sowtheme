@@ -178,6 +178,10 @@ body {
     flex-direction: column;
 }
 
+#nextback {
+    max-width: 100%;
+}
+
 /* mobile */
 @media only screen 
 and (max-device-width: 900px)

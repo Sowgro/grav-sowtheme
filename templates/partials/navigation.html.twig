@@ -14,3 +14,27 @@
         </div>
     </a>
 </div> #}
+
+{# {% if $prevPage = page.prevSibling %} #}
+<a class="anim2" href="{{ page.parent.url }}">
+    <div class="roundedButton">
+        <span class="icon">arrow_back</span>
+        <div class="stack">
+            <span>Previous</span>
+            <span>Sample last article name</span>
+        </div>
+    </div>
+</a>
+{# {% endif %} #}
+
+{# {% if $nextPage = page.nextSibling %} #}
+<a class="anim3" href="{{ page.parent.url }}">
+    <div class="roundedButton">
+        <span class="icon">arrow_forward</span>
+        <div class="stack">
+            <span>Next</span>
+            <span>Sample next article name</span>
+        </div>
+    </div>
+</a>
+{# {% endif %} #}

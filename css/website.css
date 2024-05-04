@@ -169,7 +169,13 @@ body {
     margin: 5px 5px;
     flex-wrap: wrap;
     display: flex;
-    gap: 25px;
+    gap: 40px;
+}
+
+.stack
+{
+    display: flex;
+    flex-direction: column;
 }
 
 /* mobile */

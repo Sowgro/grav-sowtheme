@@ -1,7 +1,6 @@
-
 {% if page.parent.parent.url == "/" %}
 <div class="links" id="nextprev">
-    {% set prevPage = page.prevSibling() %}
+    {% set prevPage = page.parent.children().nth(page.parent.children().currentPosition(page.path)-1) %}
     {% if prevPage %}
     <a class="anim2" id="prev" href="{{ prevPage.url }}">
         <div class="roundedButton">
@@ -14,7 +13,7 @@
     </a>
     {% endif %}
 
-    {% set nextPage = page.nextSibling() %}
+    {% set nextPage = page.parent.children().nth(page.parent.children().currentPosition(page.path)+1) %}
     {% if nextPage %}
     <a class="anim3" id="next" href="{{ nextPage.url }}">
         <div class="roundedButton">

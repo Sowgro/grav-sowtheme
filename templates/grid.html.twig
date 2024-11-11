@@ -19,7 +19,10 @@
 					{% for current_page in page.children %}
 						<li>
 							<a href="{{ current_page.url|e }}">
-								{{ current_page.title|e }}
+								<div>
+									{{ page.media.images|first }}
+									{{ current_page.title|e }}
+								</div>
 							</a>
 						</li>
 					{% endfor %}

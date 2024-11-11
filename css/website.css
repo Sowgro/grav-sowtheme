@@ -261,7 +261,7 @@ hr {
     gap: 40px;
 }
 
-.grid div {
+.grid .proj {
     width: 400px;
     border-color: white;
     border-style: solid;
@@ -270,7 +270,9 @@ hr {
     padding: 10px;
 }
 
+.grid .proj-thumb {
 
+}
 
 /* mobile */
 @media only screen and (max-device-width: 900px) {

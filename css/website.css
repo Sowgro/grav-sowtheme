@@ -262,16 +262,22 @@ hr {
 }
 
 .grid .proj {
-    width: 400px;
-    border-color: white;
+    border-width: 1px;
     border-style: solid;
-    height: 400px;
     border-radius: 10px;
     padding: 10px;
 }
 
 .grid .proj-thumb {
+    height: 400px;
+    width: 400px;
+    background-color: #222;
+}
 
+.proj-thumb .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* mobile */

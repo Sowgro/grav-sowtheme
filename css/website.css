@@ -254,21 +254,33 @@ hr {
     margin: 60px 0px;
 }
 
-/* mobile */
-@media only screen 
-and (max-device-width: 900px)
-{
-.header
-{
-    margin: 10px;
-}    
-.footer
-{
-    margin: 10px;
-}
-.h1t 
-{
-    font-size: 300%;
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
+.grid div {
+    width: 400px;
+    border-color: white;
+    border-style: solid;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/* mobile */
+@media only screen and (max-device-width: 900px) {
+    .header {
+        margin: 10px;
+    }
+    .footer {
+        margin: 10px;
+    }
+    .h1t {
+        font-size: 300%;
+    }
 }

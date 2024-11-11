@@ -17,14 +17,14 @@
 				{{ page.content|raw }}
 				<div class="grid">
 					{% for current_page in page.children %}
-						<div>
-							<a href="{{ current_page.url|e }}">
-								<div>
+						<a href="{{ current_page.url|e }}">
+							<div>
+								<div class="proj-thumb">
 									{{ current_page.media.images|first|raw }}
-									{{ current_page.title|e }}
 								</div>
-							</a>
-						</div>
+								{{ current_page.title|e }}
+							</div>
+						</a>
 					{% endfor %}
 				</div>
 				{% include 'partials/navigation.html.twig' %}

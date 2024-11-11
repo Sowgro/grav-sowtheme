@@ -15,8 +15,9 @@
 		<div class="center">
 			<div class="content">
 				{{ page.content|raw }}
+				<div class="grid">
 					{% for current_page in page.children %}
-						<div class="grid">
+						<div>
 							<a href="{{ current_page.url|e }}">
 								<div>
 									{{ current_page.media.images|first|raw }}
@@ -25,6 +26,7 @@
 							</a>
 						</div>
 					{% endfor %}
+				</div>
 				{% include 'partials/navigation.html.twig' %}
 			</div>
 		</div>

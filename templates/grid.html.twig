@@ -17,14 +17,14 @@
 				{{ page.content|raw }}
 				<ul>
 					{% for current_page in page.children %}
-						<li>
+						<div>
 							<a href="{{ current_page.url|e }}">
 								<div>
-									{{ current_page.media.images|first }}
+									{{ current_page.media.images|first|raw }}
 									{{ current_page.title|e }}
 								</div>
 							</a>
-						</li>
+						</div>
 					{% endfor %}
 				</ul>
 				{% include 'partials/navigation.html.twig' %}

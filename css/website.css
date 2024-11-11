@@ -268,7 +268,7 @@ hr {
     padding: 10px;
 }
 
-.a:hover .proj-thumb {
+a:hover .proj-thumb {
     opacity: 50%;
 }
 

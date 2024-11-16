@@ -57,7 +57,7 @@ a.white:hover {
 }
 
 li {
-    padding: 2px 0px;
+    padding: 2px 0;
 }
 
 /* Table */
@@ -107,10 +107,9 @@ body {
 	display: flex;
 	min-width: 100%;
     min-height: 100%;
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	line-height: 1.7;
 	margin: 0;
-    display: flex;
     flex-direction: column;
 }
 
@@ -241,7 +240,7 @@ body {
 /* home page only */
 .h1t {
     font-size: 500%;
-    margin: 0px;
+    margin: 0;
 }
 
 .h2t {
@@ -249,9 +248,8 @@ body {
 }
 
 hr {
-    border-color: white;
     border: 1px solid #ffffff1f;
-    margin: 60px 0px;
+    margin: 60px 0;
 }
 
 .grid {
@@ -265,7 +263,9 @@ hr {
     /*border-width: 1px;*/
     /*border-style: solid;*/
     /*border-radius: 10px;*/
+    box-sizing: border-box;
     padding: 10px;
+    max-width: 100%;
 }
 
 a:hover .proj-thumb {
@@ -273,8 +273,9 @@ a:hover .proj-thumb {
 }
 
 .grid .proj-thumb {
-    height: 400px;
     width: 400px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
     background-color: #222;
 }
 

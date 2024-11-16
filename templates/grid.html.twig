@@ -17,13 +17,11 @@
 				{{ page.content|raw }}
 				<div class="grid">
 					{% for current_page in page.children %}
-						<a href="{{ current_page.url|e }}">
-							<div class="proj">
-								<div class="proj-thumb">
-									{{ current_page.media.images|first|raw }}
-								</div>
-								{{ current_page.title|e }}
-							</div>
+						<a href="{{ current_page.url|e }}" class="proj">
+                            <div class="proj-thumb">
+                                {{ current_page.media.images|first|raw }}
+                            </div>
+                            {{ current_page.title|e }}
 						</a>
 					{% endfor %}
 				</div>
